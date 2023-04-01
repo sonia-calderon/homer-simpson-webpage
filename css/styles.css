@@ -1,0 +1,133 @@
+/* ------------------------- FONTS ------------------------------------------- */
+@font-face {
+    font-family: RobotoSlabLight;
+    src: url(../assets/fonts/robotoslab-light.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: RobotoSlabBlack;
+    src: url(../assets/fonts/robotoslab-black.woff);
+    font-weight: 900;
+}
+
+
+/* ------------------------- GENERAL ------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: #78bbcb;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: RobotoSlabBlack;
+    font-size: 100px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.first {
+    justify-content: space-between;
+}
+
+.second {
+    justify-content: space-around;
+}
+
+.third {
+    justify-content: center;
+}
+
+.fourth {
+    justify-content: space-around;
+}
+
+.fifth {
+    justify-content: flex-start;
+}
+
+.fifth div {
+    height: 100%;
+}
+
+
+/* 
+    bell - 80x80 - small
+    clock - 60x60 - small
+    mouth - 90x90 - small
+    toaster - 100x100 - medium
+    worm - 70x40 - medium
+    jesus - 208x384
+*/
+
+/* Images sizes */
+.toaster.big {
+    width: 150px;
+    height: 150px;
+}
+
+.toaster.small {
+    width: 70px;
+    height: 70px;
+}
+
+.bell.medium {
+    width: 100px;
+    height: 100px;
+}
+
+.mouth.big {
+    width: 140px;
+    height: 140px;
+}
+
+.worm.big {
+    width: 100px;
+    height: 70px;
+}
+
+.jesus {
+    width: 238px;
+    height: 414px;
+}
+
+
+footer {
+    height: 30px;
+}
+
+@media (min-width: 1200px) { 
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: #78bbcb;
+    }
+    .content {
+        width: 80%;
+    }
+}
